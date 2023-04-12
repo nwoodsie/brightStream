@@ -1,3 +1,80 @@
-.div {
+.home-content {
     text-align: center;
-}
+    position: absolute;
+    width: 100%;
+    height: 660px;
+    left: 0px;
+    top: 67px;
+    background: #F5F9FF;
+    background-size: cover;
+  }
+
+  .home-title{
+    position: absolute;
+    width: 469px;
+    height: 115px;
+    left: 144px;
+    top: 183px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    letter-spacing: 0.01em;
+
+    color: #5E5D5D;
+  }
+  
+  p {
+    position: absolute;
+    width: 482px;
+    height: 93px;
+    left: 144px;
+    top: 324px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+    color: #000000;
+  }
+
+  .home-background {
+    position: relative;
+    width: 655px;
+    height: 363px;
+  }
+
+  .homepage-gs rect {
+    position: absolute;
+    width: 275px;
+    height: 45px;
+    left: 193px;
+    top: 467px;
+
+    background: #3B6FF4;
+    border-radius: 180px;
+  }
+
+  .homepage-gs h2 {
+    position: absolute;
+    width: 114px;
+    height: 24px;
+    left: 273px;
+    top: 477px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+  }

@@ -1,0 +1,67 @@
+.brightstream-icon-container {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 48px;
+    top: 5px;
+}
+.navbar-brand {
+    position: absolute;
+    width: 133px;
+    height: 24px;
+    left: 129px;
+    top: 23px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+
+    color: #3B6FF4;
+}
+.navbar-nav{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+.navbar-nav #class-option {
+    position: absolute;
+    width: 42px;
+    height: 18px;
+    left: 308px;
+    top: 26px; 
+}
+.navbar-nav #schedule-option {
+    position: absolute;
+    width: 70px;
+    height: 18px;
+    left: 370px;
+    top: 26px;
+}
+.navbar-nav #collaborate-option {
+    position: absolute;
+    width: 87px;
+    height: 18px;
+    left: 460px;
+    top: 26px;
+}
+.navbar-nav #quiz-option {
+    position: absolute;
+    width: 35px;
+    height: 18px;
+    left: 567px;
+    top: 26px;
+}
+.navbar-nav #privacy-option {
+    position: absolute;
+    width: 56px;
+    height: 18px;
+    left: 622px;
+    top: 26px;
+}
