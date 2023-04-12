@@ -1,32 +1,52 @@
-import React from 'react'
-import "./NavBar.css"
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
-
-function BasicExample() {
+import React from "react";
+import "./NavBar.css";
+import MenuBookTwoToneIcon from '@mui/icons-material/MenuBookTwoTone';
+import { Link } from "react-router-dom";
+import { DefaultButton } from "../index.js"
+function NavBar() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand as={Link} to="/" >BrightStream</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={Link} to="/Class" >Class</Nav.Link>
-            <Nav.Link as={Link} to="/Schedule">Schedule</Nav.Link>
-            <Nav.Link as={Link} to="/Collaborate">Collaborate</Nav.Link>
-            <Nav.Link as={Link} to="/Quiz">Quiz</Nav.Link>
-            <Nav.Link as={Link} to="/Privacy">Privacy</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-        <Navbar.Collapse className='justify-content-end'>
-          <Nav.Link href="#Login">Login</Nav.Link>
-          <Nav.Link href="#GetStarted">Get Started</Nav.Link>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
+    <div className="navBarWrapper">
+      <div className="navBarLeft">
+        <MenuBookTwoToneIcon />
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <div className="navBarTitle">
+            BrightStream
+          </div>
+        </Link>
+        <Link to="/Class" style={{ textDecoration: "none" }}>
+          <div className="navBarLink">
+            Class
+          </div>
+        </Link>
+        <Link to="/Class" style={{ textDecoration: "none" }}>
+          <div className="navBarLink">
+            Schedule
+          </div>
+        </Link>
+        <Link to="/Class" style={{ textDecoration: "none" }}>
+          <div className="navBarLink">
+            Collaborate
+          </div>
+        </Link>
+        <Link to="/Class" style={{ textDecoration: "none" }}>
+          <div className="navBarLink">
+            Quiz
+          </div>
+        </Link>
+        <Link to="/Class" style={{ textDecoration: "none" }}>
+          <div className="navBarLink">
+            Privacy
+          </div>
+        </Link>
+      </div>
+      <div className="navBarRight">
+        <div className="navBarLink">
+          Log In
+        </div>
+        <DefaultButton text='Get Started'/>
+      </div>
+    </div>
+  )
 }
 
-export default BasicExample;
+export default NavBar

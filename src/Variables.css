@@ -1,0 +1,15 @@
+:root {
+    --main-font: 'Inter';
+    --white: #ffffff;
+    --black: #000000;
+    --main-blue: #3B6FF4;
+    --sub-blue: #F5F9FF;
+    --font-black: #00000;
+    --font-grey: #5E5D5D;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    letter-spacing: 0.01em;
+}

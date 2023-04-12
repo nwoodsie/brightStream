@@ -2,7 +2,7 @@ import React from 'react'
 
 function ClassPage() {
   return (
-    <div className='Class'>
+    <div className='ClassWrapper'>
         <h1>Class Page</h1>
     </div>
   )

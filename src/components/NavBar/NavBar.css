@@ -1,0 +1,50 @@
+.navBarWrapper {
+  background-color: var(--white);
+  height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.navBarLeft {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.navBarLeft > .MuiSvgIcon-root {
+  color: var(--main-blue);
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  margin-bottom: 5px;
+}
+
+.navBarTitle {
+  color: var(--main-blue);
+  padding-left: 0.2rem;
+  padding-right: 1rem;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+
+.navBarLink {
+  color: var(--black);
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  margin-right: 0.4rem;
+}
+.navBarRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

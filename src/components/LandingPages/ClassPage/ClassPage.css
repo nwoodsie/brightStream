@@ -1,0 +1,4 @@
+.ClassWrapper { 
+  display: flex;
+  background-color: var(--sub-blue);
+}
