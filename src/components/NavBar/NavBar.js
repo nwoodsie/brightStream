@@ -40,10 +40,14 @@ function NavBar() {
         </Link>
       </div>
       <div className="navBarRight">
-        <div className="navBarLink">
-          Log In
-        </div>
-        <DefaultButton text='Get Started'/>
+        <Link to="/Login" style={{ textDecoration: "none" }}>
+          <div className="navBarLink">
+            Log In
+          </div>
+        </Link>
+        <Link to="/GetStarted" style={{ textDecoration: "none" }}>
+          <DefaultButton text='Get Started'/>
+        </Link>
       </div>
     </div>
   )
