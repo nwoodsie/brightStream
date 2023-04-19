@@ -1,14 +1,25 @@
 import React, {useState} from 'react'
 import './LoginPage.css'
+import {auth} from '../../firebase.js'
 import { DefaultButton } from '../../index.js'
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
 function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    alert(`${email}, ${password}`);
+  const onLogin = (e) => {
+    e.preventDefault();
+    signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      const user = userCredential.user;
+      console.log(user);
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode, errorMessage);
+    })
   }
 
   return (
@@ -17,7 +28,7 @@ function LoginPage() {
           <div className='loginTitle'>
             Log in to BrightStream
           </div>
-          <form onSubmit={handleSubmit}>
+          <form>
             <div className='loginForm'>
               <label className='loginLabel' id="emailLabel">
                 Email:
@@ -25,7 +36,8 @@ function LoginPage() {
               <input
                 className='loginInput'
                 type='text'
-                id='username'
+                id='email'
+                required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 />
@@ -38,13 +50,14 @@ function LoginPage() {
                 className='loginInput'
                 type='password'
                 id='password'
+                required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
                 <br></br>
             <div className='buttonContainer'>
-              <button type='submit'>
+              <button onClick={onLogin}>
                 <DefaultButton text='Log in' size='Big'/>
               </button>
             </div>
