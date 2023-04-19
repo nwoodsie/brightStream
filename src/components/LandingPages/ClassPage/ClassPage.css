@@ -10,7 +10,6 @@
   display: flex;
   width: 1340px;
   justify-content: center;
-  background-color: var(--sub-black);
 }
 
 .classLeft {
@@ -28,7 +27,6 @@
   margin-top: 2.5rem;
   margin-left: 4.5rem;
   width: 65%;
-  background-color: var(--sub-black);
 }
 .classTitle {
   color: var(--font-grey);
