@@ -55,7 +55,6 @@ function LoginPage() {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-                <br></br>
             <div className='buttonContainer'>
               <button onClick={onLogin}>
                 <DefaultButton text='Log in' size='Big'/>
