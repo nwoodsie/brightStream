@@ -16,14 +16,16 @@ function ClassPage() {
         </div>
         <div className='classText'>
             {classtext}
-          </div>
-          <div className='buttonContainer'>
+            </div>
+    
+            <div className='buttonContainer'>
             <DefaultButton text='Get started' size='Big'/>
+          
           </div>
 
-        
+          </div>
 
-      </div>
+      
      </div>
     </div>
     )

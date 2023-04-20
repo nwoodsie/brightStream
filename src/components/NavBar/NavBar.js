@@ -23,7 +23,7 @@ function NavBar() {
             Schedule
           </div>
         </Link>
-        <Link to="/Class" style={{ textDecoration: "none" }}>
+        <Link to="/Collaborate" style={{ textDecoration: "none" }}>
           <div className="navBarLink">
             Collaborate
           </div>

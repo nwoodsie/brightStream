@@ -1,0 +1,49 @@
+.collaborateWrapper {
+    display: flex;
+    background-color: var(--sub-blue);
+    width: 100dvw;
+    height: 64vh;
+    justify-content: center;
+  }
+  
+.collaborateContainer {
+    display: flex;
+    width: 1340px;
+    justify-content: center;
+  }
+.collaborateCenter {
+    margin-top: 2.5rem;
+    width: 60%;
+    background-color: var(--sub-black);
+  }
+  .collaborateTitle {
+    color: var(--font-grey);
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    text-align: center;
+    line-height: 55px;
+  }
+  .collaborateCenter > img {
+    margin-top: 0.5rem;
+    max-width:120%;
+  }
+  .collaborateText {
+    margin: 1.8rem 0rem 0rem 0rem;
+    color: var(--black);
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 10;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    line-height: 18px;
+    max-width: 540px;
+    letter-spacing: 1.5px;
+  }
+  .collabContainer {
+    margin-left: 12.5rem;
+    margin-top: -1.5rem;
+  }
+  
