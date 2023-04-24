@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import './GSPage.css'
 import { DefaultButton } from '../../index.js'
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-import {auth} from '../../firebase.js'
+import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { setDoc, doc } from 'firebase/firestore'
+import {auth, db} from '../../firebase.js'
 
 function GSPage() {
   const [name, setName] = useState("");
@@ -11,11 +12,29 @@ function GSPage() {
   const [cpassword, setCPassword] = useState("");
 
   const onRegister = (e) => {
+    e.preventDefault();
+
+    //Authentication firebase + Cloud firestore nested inside function
     createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       // Signed in 
       const user = userCredential.user;
       console.log(user);
+
+      //Cloud firestore database for user
+      let userData = {
+        user_id: user.uid,
+        name: name,
+        email: email,
+        password: password,
+        dolby_creds: {
+          streamName: "",
+          streamToken: "",
+          dolby_id: ""
+        }
+      }
+      setDoc(doc(db, "users", user.uid), userData);
+
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -23,6 +42,7 @@ function GSPage() {
       console.log(errorCode);
       console.log(errorMessage);
     });
+
   }
 
   return (
