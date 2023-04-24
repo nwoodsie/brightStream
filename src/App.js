@@ -1,7 +1,7 @@
 import "./App.css";
 import "./Variables.css"
 import NavBar from "./components/NavBar/NavBar.js"
-import { HomePage, ClassPage, CollaboratePage } from "./components/index.js"
+import { HomePage, ClassPage, CollaboratePage, SchedulePage } from "./components/index.js"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
             <Route exact path='/' element={<HomePage />}/>
             <Route exact path='/Class' element={<ClassPage />}/>
             <Route exact path='/Collaborate' element={<CollaboratePage />}/>
+            <Route exact path='/Schedule' element={<SchedulePage />}/>
           </Routes>
       </Router>
     </div>

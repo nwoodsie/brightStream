@@ -47,7 +47,6 @@
   }
   
   .buttonContainer {
-    margin-top: 20rem;
     margin-left: 1rem;
   }
   
@@ -58,6 +57,7 @@
   }
   
   .scheduleRight > img {
-    max-width:200%;
+    max-width:100%;
+   
   }
   
