@@ -16,9 +16,10 @@ function LoginPage() {
       console.log(user);
     })
     .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log(errorCode, errorMessage);
+      // const errorCode = error.code;
+      // const errorMessage = error.message;
+      // console.log(errorCode, errorMessage);
+      alert("Invalid Username/Password")
     })
   }
 
@@ -55,10 +56,8 @@ function LoginPage() {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <div className='buttonContainer'>
-              <button onClick={onLogin}>
-                <DefaultButton text='Log in' size='Big'/>
-              </button>
+            <div className='buttonContainer' onClick={onLogin}>
+              <DefaultButton text='Log in' size='Big'/>
             </div>
           </form>
         </div>
