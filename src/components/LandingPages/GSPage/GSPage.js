@@ -3,6 +3,7 @@ import './GSPage.css'
 import { DefaultButton } from '../../index.js'
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import {auth} from '../../firebase.js'
+import { useNavigate } from "react-router-dom";
 
 function GSPage() {
   const [name, setName] = useState("");
@@ -10,20 +11,28 @@ function GSPage() {
   const [password, setPassword] = useState("");
   const [cpassword, setCPassword] = useState("");
 
+
+  const navigate = useNavigate()
+  const redirect = () => navigate('/login', {replace: true}) 
+
   const onRegister = (e) => {
     createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       // Signed in 
       const user = userCredential.user;
       console.log(user);
+      redirect()
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
       console.log(errorCode);
       console.log(errorMessage);
+      alert("Something went wrong!")
     });
   }
+  
+
 
   return (
     <div className='gsWrapper'>
@@ -90,10 +99,8 @@ function GSPage() {
                   Teacher
                 </label>
               </div>
-              <div className='buttonContainer'>
-                <button onClick={onRegister}>
-                  <DefaultButton text='Create Account' size='Big'/>
-                </button>
+              <div className='buttonContainer' onClick={onRegister}>
+                <DefaultButton text='Create Account' size='Big'/>
               </div>
             </form>
         </div>
