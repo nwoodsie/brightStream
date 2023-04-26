@@ -1,0 +1,113 @@
+.gsWrapper {
+    display: flex;
+    background-color: var(--sub-blue);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.gsContainer {
+    background: #FFFFFF;
+    
+    flex-direction: column;
+    display: flex;
+    position: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 30px;
+    
+    width: 515px;
+    height: 627px;
+    left: 463px;
+    top: 198px;
+
+    margin-top: 125px;
+}
+
+.gsTitle {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+
+    margin-top: 33px;
+
+    color: #000000;
+}
+
+.gsForm {
+    justify-content: center;
+    
+}
+
+.gsLabel {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+    /* identical to box height */
+    letter-spacing: 0.01em;
+
+    color: #000000;
+}
+
+#nameLabel {
+    margin-right: 405px;
+    margin-left: 70px;
+}
+
+#emailLabel {
+    margin-right: 406px;
+    margin-left: 66px;
+}
+
+#passwordLabel {
+    margin-right: 375px;
+    margin-left: 66px;
+}
+
+#cpasswordLabel {
+    margin-right: 316px;
+    margin-left: 70px;
+}
+
+.gsInput {
+    width: 344px;
+    height: 45px;
+    left: 529px;
+    top: 323px;
+    background: rgba(217, 217, 217, 0.6);
+    border-radius: 4px;
+
+    margin-right: 100px;
+    margin-left: 66px;
+    
+}
+
+.gsBox {
+    background: #3B6FF4;
+}
+
+.gsRoleLabel {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+    /* identical to box height */
+    letter-spacing: 0.01em;
+
+    color: #000000;
+}
+
+.buttonContainer {
+    margin-right: 115px;
+    margin-left: 120px;
+    margin-bottom: 56px;;
+}
