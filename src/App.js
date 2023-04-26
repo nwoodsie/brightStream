@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar/NavBar.js";
 import {
   HomePage,
   ClassPage,
+  CollaboratePage,
   DashBoard,
   GSPage,
   LoginPage,
@@ -26,13 +27,14 @@ function App() {
             <Route exact path="/Class" element={<ClassPage />} />
             <Route exact path="/GetStarted" element={<GSPage />} />
             <Route exact path="/Login" element={<LoginPage />} />
+            <Route exact path='/Collaborate' element={<CollaboratePage />}/>
           </Routes>
         </Router>
       ) : (
         <Router>
           <Routes>
             <Route exact path="/" element={<DashBoard />} />
-            <Route exact path="/ViewStream" element={<ClassRoom />} />\
+            <Route exact path="/ViewStream" element={<ClassRoom />} />
             <Route exact path="/HostStream" element={<DashBoard />} />
           </Routes>
         </Router>
