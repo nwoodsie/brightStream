@@ -22,13 +22,13 @@ function SideBar() {
           <p>Home</p>
         </div>
       </Link>
-      <Link to="/" style={{ textDecoration: "none" }}>
+      <Link to="/HostStream" style={{ textDecoration: "none" }}>
         <div className="sideBarIconWrapper">
           <VideocamIcon />
           <p>Classroom</p>
         </div>
       </Link>
-      <Link to="/" style={{ textDecoration: "none" }}>
+      <Link to="/ViewStream" style={{ textDecoration: "none" }}>
         <div className="sideBarIconWrapper">
           <OndemandVideoIcon />
           <p>Browse</p>

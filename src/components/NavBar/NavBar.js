@@ -12,6 +12,9 @@ function NavBar() {
         <Link to="/" style={{ textDecoration: "none" }}>
           <div className="navBarTitle">BrightStream</div>
         </Link>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <div className="navBarLink">Home</div>
+        </Link>
         <Link to="/Class" style={{ textDecoration: "none" }}>
           <div className="navBarLink">Class</div>
         </Link>
@@ -19,9 +22,7 @@ function NavBar() {
           <div className="navBarLink">Schedule</div>
         </Link>
         <Link to="/Collaborate" style={{ textDecoration: "none" }}>
-          <div className="navBarLink">
-            Collaborate
-          </div>
+          <div className="navBarLink">Collaborate</div>
         </Link>
         <Link to="/Class" style={{ textDecoration: "none" }}>
           <div className="navBarLink">Quiz</div>
