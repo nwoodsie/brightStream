@@ -27,7 +27,7 @@ function App() {
             <Route exact path="/Class" element={<ClassPage />} />
             <Route exact path="/GetStarted" element={<GSPage />} />
             <Route exact path="/Login" element={<LoginPage />} />
-            <Route exact path='/Collaborate' element={<CollaboratePage />}/>
+            <Route exact path="/Collaborate" element={<CollaboratePage />} />
           </Routes>
         </Router>
       ) : (
