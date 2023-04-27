@@ -8,7 +8,7 @@ function PrivacyPage() {
     <div className='privacyWrapper'>
      <div className='privacycontainer'>
      <div className='classLeft'>
-     <img src={require('./PrivacyPageImage.jpg')} alt=''></img>
+     <img src={require('./PrivacyPageImage.png')} alt=''></img>
         </div>
       <div className='privacyRight'>
         <div className='privacyTitle'>
