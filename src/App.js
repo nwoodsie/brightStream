@@ -18,7 +18,7 @@ import {
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  const isLoggedIn = false;
+  const isLoggedIn = true;
 
   return (
     <div className="App">

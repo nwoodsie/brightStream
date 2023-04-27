@@ -1,6 +1,6 @@
 .privacyWrapper {
     display: flex;
-    background-color: var(--sub-black);
+    background-color: var(--sub-blue);
     width: 100dvw;
     height: 64vh;
     justify-content: center;
