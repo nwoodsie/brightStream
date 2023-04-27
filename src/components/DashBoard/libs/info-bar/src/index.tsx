@@ -1,8 +1,8 @@
 import { Heading, HStack } from '@chakra-ui/react';
 import React from 'react';
 
-import ParticipantCount from '@millicast-react/participant-count';
-import Timer from '@millicast-react/timer';
+import ParticipantCount from '../../participant-count/src';
+import Timer from '../../timer/src';
 
 interface InfoBarProps {
   numViewers: number;
