@@ -1,5 +1,5 @@
-import { StartDeviceProps } from '@millicast-react/use-media-devices';
-import { PublisherSources } from '@millicast-react/use-publisher';
+import { StartDeviceProps } from '../../../libs/use-media-devices/src';
+import { PublisherSources } from '../../../libs/use-publisher/src';
 
 import { StreamsMap } from '../../hooks/use-multi-media-streams';
 

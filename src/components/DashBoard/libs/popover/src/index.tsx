@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 
-import IconButton from '@millicast-react/icon-button';
+import IconButton from '../../../libs/icon-button/src';
 
 import { PopoverProps } from './types';
 

@@ -1,7 +1,7 @@
 import { Box, Flex, Text, VStack } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 
-import InfoBar from '../libs/info-bar/src/index';
+import InfoBar from '../libs/info-bar/src';
 import InfoLabel from '../libs/info-label/src';
 import useLocalFiles from '../libs/use-local-files/src';
 import useMediaDevices from '../libs/use-media-devices/src';
@@ -14,7 +14,7 @@ import ActionBar from './components/action-bar';
 import PublisherVideoTiles from './components/publisher-video-tiles';
 import useMultiMediaStreams, { StreamTypes } from './hooks/use-multi-media-streams';
 
-import './styles/app.css';
+import './Publisher.css';
 
 const TIMESTAMP_STREAM_NAME = new Date().valueOf().toString();
 

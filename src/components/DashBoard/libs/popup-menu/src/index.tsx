@@ -1,7 +1,7 @@
 import { Menu, MenuButton, MenuList, MenuItem, Button, Box, Text } from '@chakra-ui/react';
 import React from 'react';
 
-import { IconAdd } from '@millicast-react/dolbyio-icons';
+import { IconAdd } from '../../../libs/dolbyio-icons/src';
 
 import { PopupMenuProps } from './types';
 

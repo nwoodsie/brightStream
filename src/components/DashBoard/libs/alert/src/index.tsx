@@ -7,7 +7,7 @@ import {
   CloseButton,
 } from '@chakra-ui/react';
 
-import { IconClose, IconWarning } from '@millicast-react/dolbyio-icons';
+import { IconClose, IconWarning } from '../../../libs/dolbyio-icons/src';;
 
 type AlertProps = ChakraAlertProps & {
   message: string;
