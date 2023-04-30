@@ -4,7 +4,7 @@
   align-items: center;
   height: 100vh;
   transition: width 0.3s ease-in-out;
-  width: 250px;
+  width: 200px;
 
   box-shadow: 2px 0 8px -6px #222;
   -webkit-user-select: none; /* Safari */
@@ -45,14 +45,15 @@
 
 .sideBarIconWrapper {
   display: flex;
-  width: 5rem;
-  height: 1rem;
+  width: 3rem;
+  height: 0.5rem;
   padding: 0px;
   border-radius: 8px;
   align-content: center;
   align-items: center;
   justify-content: stretch;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.2rem;
+  margin-left:1rem;
 }
 
 .sideBarIconWrapper:hover {
@@ -62,15 +63,15 @@
 
 .sideBarIconWrapper > .MuiSvgIcon-root {
   color: var(--main-blue);
-  font-size: 42px;
-  margin-right: 0.4rem;
+  font-size: 25px;
+  margin-right: 0.2rem;
 }
 
 .sideBarIconWrapper > p {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.01em;
   color: black;
@@ -98,10 +99,11 @@
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 21px;
+  font-size: 15px;
   line-height: 12px;
   letter-spacing: 0.01em;
   color: black;
+  margin-left: -1rem;
 }
 .profileWrapper > .MuiSvgIcon-root {
   color: var(--main-blue);
@@ -110,6 +112,6 @@
 }
 
 .profileWrapper > img {
-  max-width: 100%;
+  max-width: 50%;
 }
 
