@@ -8,8 +8,18 @@ import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
 import SettingsIcon from "@mui/icons-material/Settings";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { Link } from "react-router-dom";
+import { useDispatch } from 'react-redux';
+import { logout } from '../../features/userSlice.js';
 
 function SideBar() {
+  //const user = userSelector(selectUser);
+  const dispatch = useDispatch();
+  const handleLogout = (e) => {
+    e.preventDefault();
+
+    dispatch(logout());
+  }
+
   return (
     <div className="sideBarWrapper">
       <div className="sideBarLogo">
@@ -46,6 +56,9 @@ function SideBar() {
           <p>Settings</p>
         </div>
       </Link>
+      <button onClick={(e) => handleLogout(e)}>
+        Logout
+      </button>
       <div className="profileWrapper">
         <img src={require("./profilePicture.jpg")} alt="" />
       </div>

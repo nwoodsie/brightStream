@@ -2,8 +2,11 @@ import React, {useState} from 'react'
 import './GSPage.css'
 import { DefaultButton } from '../../index.js'
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-import {auth} from '../../firebase.js'
+import {auth, db} from '../../firebase.js'
+import { setDoc, doc } from 'firebase/firestore'
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from 'react-redux';
+import { login } from '../../../features/userSlice';
 
 function GSPage() {
   const [name, setName] = useState("");
@@ -11,16 +14,39 @@ function GSPage() {
   const [password, setPassword] = useState("");
   const [cpassword, setCPassword] = useState("");
 
-
   const navigate = useNavigate()
-  const redirect = () => navigate('/login', {replace: true}) 
+  const redirect = () => navigate('/', {replace: true}) 
+
+  const dispatch = useDispatch();
 
   const onRegister = (e) => {
+    e.preventDefault();
+
+    //Authentication firebase + Cloud firestore nested inside function
     createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       // Signed in 
       const user = userCredential.user;
       console.log(user);
+
+      //Cloud firestore database to store new registered user
+      let userData = {
+        user_id: user.uid,
+        name: name,
+        email: email,
+        password: password,
+        dolby_creds: {
+          streamName: "",
+          streamToken: "",
+          dolby_id: ""
+        }
+      }
+      setDoc(doc(db, "users", user.uid), userData);
+
+      dispatch(login({
+        user: user,
+        isLoggedIn:true
+      }))
       redirect()
     })
     .catch((error) => {
