@@ -18,8 +18,10 @@ function NavBar() {
           <Link to="/Dolby" style={{ textDecoration: "none" }}>
           <div className="navBarLink">Dolby</div>
         </Link>
-        <Link to="/Schedule" style={{ textDecoration: "none" }}>
-          <div className="navBarLink">Schedule</div>
+        <Link to="/Class" style={{ textDecoration: "none" }}>
+          <div className="navBarLink">
+            Schedule
+          </div>
         </Link>
         <Link to="/Collaborate" style={{ textDecoration: "none" }}>
           <div className="navBarLink">

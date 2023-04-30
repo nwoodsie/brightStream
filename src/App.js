@@ -18,7 +18,7 @@ import {
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  const isLoggedIn = false;
+  const isLoggedIn = true;
 
   return (
     <div className="App">
@@ -30,10 +30,10 @@ function App() {
             <Route exact path="/Class" element={<ClassPage />} />
             <Route exact path="/GetStarted" element={<GSPage />} />
             <Route exact path="/Login" element={<LoginPage />} />
-            <Route exact path='/Collaborate' element={<CollaboratePage />}/>
-            <Route exact path='/Privacy' element={<PrivacyPage />}/>
-            <Route exact path='/Schedule' element={<SchedulePage />}/>
-            <Route exact path='/Dolby' element={<DolbyPage />}/>
+            <Route exact path="/Collaborate" element={<CollaboratePage />} />
+            <Route exact path="/Privacy" element={<PrivacyPage />} />
+            <Route exact path="/Schedule" element={<SchedulePage />} />
+            <Route exact path="/Dolby" element={<DolbyPage />} />
           </Routes>
         </Router>
       ) : (
