@@ -3,10 +3,18 @@ import './LoginPage.css'
 import {auth} from '../../firebase.js'
 import { DefaultButton } from '../../index.js'
 import { signInWithEmailAndPassword } from 'firebase/auth';
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from 'react-redux';
+import { login } from '../../../features/userSlice';
 
 function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const navigate = useNavigate()
+  const redirect = () => navigate('/', {replace: true}) 
+
+  const dispatch = useDispatch();
   
   const onLogin = (e) => {
     e.preventDefault();
@@ -14,6 +22,11 @@ function LoginPage() {
     .then((userCredential) => {
       const user = userCredential.user;
       console.log(user);
+      dispatch(login({
+        name:user.email,
+        isLoggedIn: true
+      }))
+      redirect();
     })
     .catch((error) => {
       // const errorCode = error.code;
