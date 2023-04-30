@@ -6,8 +6,8 @@ const privacytext = "Strict security measures are in place to ensure student pri
 function PrivacyPage() {
   return (
     <div className='privacyWrapper'>
-     <div className='privacycontainer'>
-     <div className='classLeft'>
+     <div className='privacyContainer'>
+     <div className='privacyLeft'>
      <img src={require('./PrivacyPageImage.png')} alt=''></img>
         </div>
       <div className='privacyRight'>

@@ -2,7 +2,7 @@ import React from 'react'
 import "./DolbyPage.css"
 import { DefaultButton } from '../../index.js'
 
-const Dolbytext = "Dolby.io is a new developer platform by Dolby Labs that puts decades of Dolby sight and sound technology in the hands of developers to deliver the highest quality real-time streaming, communications, and media processing solutions."
+const Dolbytext = "The Dolby.io Streaming REST API allows remote management of your Dolby.io Real-time Streaming account. To enable remote access you must first use the Token system to securely authenticate your applications with Dolby.io Real-time Streaming. o acquire an API Token, log into your Dolby.io Real-time Streaming account and create an API Secret to be verified as a user, otherwise all API calls will be rejected."
 
 function DolbyPage() {
   return (
