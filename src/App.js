@@ -2,6 +2,7 @@ import "./App.css";
 import "./Variables.css";
 import NavBar from "./components/NavBar/NavBar.js";
 
+
 import {
   HomePage,
   ClassPage,

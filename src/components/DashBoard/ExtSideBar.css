@@ -1,0 +1,126 @@
+.extsideBarWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    transition: width 0.3s ease-in-out;
+    width: 200px;
+    box-shadow: 2px 0 8px -6px #222;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
+  .extsideBarWrapperClosed {
+    transition:width 0.3s ease-in-out;
+    width: 60px;
+  }
+  .extsideBarLogo {
+    display: flex;
+    width: 80%;
+    height: 0.25rem;
+    padding: 0px;
+    align-items: space-between;
+    align-content: space-between;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #collapseIcon {
+    color: var(--main-blue);
+    font-size: 30px;
+    align-items: right;
+  }
+  
+  .extsideBarLogo > .MuiSvgIcon-root {
+    color: rgba(59, 111, 244, 0.63);
+    font-size: 0.8rem;
+  }
+  
+  .extsideBarLogo > .MuiSvgIcon-root:hover {
+    font-weight: 900;
+  }
+  
+  .extsideBarIconWrapper {
+    display: flex;
+    width: 3rem;
+    height: 1rem;
+    padding: 0px;
+    border-radius: 0px;
+    align-content: center;
+    align-items: center;
+    
+    margin-bottom: 0rem;
+    margin-left:0rem;
+  }
+  
+  .extsideBarIconWrapper:hover {
+    background-color: rgba(59, 111, 244, 0.28);
+    transition: 0.15s;
+  }
+  
+  .extsideBarIconWrapper > .MuiSvgIcon-root {
+    color: var(--main-blue);
+    font-size: 25px;
+    margin-right: 0.2rem;
+    align-items: left;
+    justify-content: center;
+  }
+  
+  .extsideBarIconWrapper > p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.01em;
+    color: black;
+    justify-content: center;
+  }
+  
+  
+  
+  .extprofileWrapper {
+    display: flex;
+    width: 3rem;
+    height: 1rem;
+    padding: 0px;
+    border-radius: 0px;
+    position: fixed;
+    bottom: 0;
+    left:-0.5rem;
+    justify-content:space-evenly;
+    margin-bottom: 0.4rem;
+    
+  }
+  .extprofileWrapper:hover {
+    background-color: rgba(59, 111, 244, 0.28);
+    transition: 0.15s;
+  }
+  .extprofileWrapper > p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 12px;
+    letter-spacing: 0.01em;
+    padding:10px;
+    margin-left:1rem;
+    color: black;
+    margin-left: -0.1rem;
+  }
+  .extprofileWrapper > .MuiSvgIcon-root {
+    color: var(--main-blue);
+    font-size: 42px;
+    margin-right: 0.4rem;
+  }
+  
+  .extprofileWrapper > img {
+    max-width: 55%;
+    max-height: 55%;
+    margin-top:0.4rem;
+    margin-left:0.6rem;
+
+  }
+  

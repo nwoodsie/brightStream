@@ -1,6 +1,5 @@
 import React from "react";
-import "./SideBar.css";
-import MenuBookTwoToneIcon from "@mui/icons-material/MenuBookTwoTone";
+import "./MinSideBar.css";
 import FirstPageIcon from "@mui/icons-material/FirstPage";
 import HomeIcon from "@mui/icons-material/Home";
 import VideocamIcon from "@mui/icons-material/Videocam";
@@ -9,47 +8,42 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth"
 import { Link } from "react-router-dom";
 
-function SideBar() {
+function MinSideBar() {
   return (
-    <div className="sideBarWrapper">
-      <div className="sideBarLogo">
-        <MenuBookTwoToneIcon />
-        <FirstPageIcon id="collapseIcon" />
+    <div className="minsideBarWrapper">
+      <div className="minsideBarLogo">
+
+        <FirstPageIcon id="mincollapseIcon" />
       </div>
       <Link to="/" style={{ textDecoration: "none" }}>
-        <div className="sideBarIconWrapper">
+        <div className="minsideBarIconWrapper">
           <HomeIcon />
-          <p>Home</p>
         </div>
       </Link>
       <Link to="/" style={{ textDecoration: "none" }}>
-        <div className="sideBarIconWrapper">
+        <div className="minsideBarIconWrapper">
           <VideocamIcon />
-          <p>Classroom</p>
         </div>
       </Link>
       <Link to="/" style={{ textDecoration: "none" }}>
-        <div className="sideBarIconWrapper">
+        <div className="minsideBarIconWrapper">
           <OndemandVideoIcon />
-          <p>Browse</p>
         </div>
       </Link>
       <Link to="/" style={{ textDecoration: "none" }}>
-        <div className="sideBarIconWrapper">
+        <div className="minsideBarIconWrapper">
           <CalendarMonthIcon />
-          <p>Schedule</p>
         </div>
       </Link>
       <Link to="/" style={{ textDecoration: "none" }}>
-        <div className="sideBarIconWrapper">
+        <div className="minsideBarIconWrapper">
           <SettingsIcon />
-          <p>Settings</p>
         </div>
       </Link>
       <Link to="/" style={{ textDecoration: "none" }}>
-        <div className="profileWrapper">
+        <div className="minprofileWrapper">
         <img src={require("./profilePicture.jpg")} alt="" />
-        <p>profile     </p>
+
         
           
          
@@ -61,4 +55,4 @@ function SideBar() {
   );
 }
 
-export default SideBar;
+export default MinSideBar;

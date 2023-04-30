@@ -1,6 +1,6 @@
 import React from "react";
 import "./DashBoard.css";
-import SideBar from "./SideBar.js";
+import SideBar from "./MinSideBar.js";
 
 function DashBoard() {
   return (

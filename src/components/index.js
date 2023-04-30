@@ -9,3 +9,4 @@ export { default as ClassRoom } from "./DashBoard/ClassRoom.js";
 export { default as PrivacyPage } from "./LandingPages/PrivacyPage/PrivacyPage.js";
 export { default as SchedulePage } from "./LandingPages/SchedulePage/SchedulePage.js";
 export { default as DolbyPage } from "./LandingPages/DolbyPage/DolbyPage.js";
+export {default as SideBar} from "./DashBoard/MinSideBar.js"
