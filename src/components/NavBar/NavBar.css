@@ -22,10 +22,10 @@
 
 .navBarTitle {
   color: var(--main-blue);
-  padding-left: 0.2rem;
-  padding-right: 1rem;
+  margin-left: 0.2rem;
+  margin-right: 1rem;
 
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -35,7 +35,7 @@
 
 .navBarLink {
   color: var(--black);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -43,6 +43,18 @@
   letter-spacing: 0.01em;
   margin-right: 0.4rem;
 }
+
+.navBarLinkSelected {
+  color: var(--dark-blue);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  margin-right: 0.4rem;
+}
+
 .navBarRight {
   display: flex;
   align-items: center;
