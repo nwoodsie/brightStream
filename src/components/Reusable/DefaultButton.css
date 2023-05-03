@@ -14,9 +14,17 @@
   width: 5rem;
 }
 
+.buttonWrapperSmall:hover {
+  cursor: pointer;
+}
+
+.buttonWrapperBig:hover {
+  cursor: pointer;
+}
+
 .buttonTextSmall {
   color: var(--white);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -28,7 +36,7 @@
 
 .buttonTextBig {
   color: var(--white);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;

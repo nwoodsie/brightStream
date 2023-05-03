@@ -21,7 +21,6 @@ import { useSelector } from "react-redux";
 import { selectUser } from "./features/userSlice.js";
 
 function App() {
-  //const isLoggedIn = false;
   const user = useSelector(selectUser);
 
   return (
