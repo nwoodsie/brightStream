@@ -13,6 +13,7 @@ import {
   DolbyPage,
   SchedulePage,
   PrivacyPage,
+  BrowseStreams,
 } from "./components/index.js";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -21,7 +22,6 @@ import { useSelector } from "react-redux";
 import { selectUser } from "./features/userSlice.js";
 
 function App() {
-  //const isLoggedIn = false;
   const user = useSelector(selectUser);
 
   return (
@@ -30,8 +30,8 @@ function App() {
         <Router>
           <Routes>
             <Route exact path="/" element={<DashBoard />} />
-            <Route exact path="/ViewStream" element={<ClassRoom />} />
-            <Route exact path="/HostStream" element={<DashBoard />} />
+            <Route exact path="/BrowseStreams" element={<BrowseStreams />} />
+            <Route exact path="/HostStream" element={<ClassRoom />} />
           </Routes>
         </Router>
       ) : (

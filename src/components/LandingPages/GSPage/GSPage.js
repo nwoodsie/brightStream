@@ -117,8 +117,12 @@ function GSPage() {
               onChange={(e) => setCPassword(e.target.value)}
             />
           </div>
-          <div className="gsButtonContainer" onClick={onRegister}>
-            <DefaultButton text="Create Account" size="Big" />
+          <div className="gsButtonContainer">
+            <DefaultButton
+              text="Create Account"
+              size="Big"
+              onClick={onRegister}
+            />
           </div>
         </form>
       </div>

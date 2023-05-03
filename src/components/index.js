@@ -9,5 +9,6 @@ export { default as DolbyPage } from "./LandingPages/DolbyPage/DolbyPage.js";
 
 export { default as DashBoard } from "./DashBoard/DashBoard.js";
 export { default as ClassRoom } from "./DashBoard/ClassRoom.js";
+export { default as BrowseStreams } from "./DashBoard/BrowseStreams.js";
 
 export { default as DefaultButton } from "./Reusable/DefaultButton.js";
