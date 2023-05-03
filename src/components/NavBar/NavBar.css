@@ -43,6 +43,18 @@
   letter-spacing: 0.01em;
   margin-right: 0.4rem;
 }
+
+.navBarLinkSelected {
+  color: var(--dark-blue);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  margin-right: 0.4rem;
+}
+
 .navBarRight {
   display: flex;
   align-items: center;

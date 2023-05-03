@@ -6,7 +6,6 @@
   justify-content: center;
 }
 
-
 .homeContainer {
   display: flex;
   width: 1340px;
@@ -46,16 +45,15 @@
   letter-spacing: 1.5px;
 }
 
-.buttonContainer {
+.homeButtonContainer {
   margin-left: 1rem;
 }
 
 .homeRight {
   margin-top: 2.5rem;
   width: 65%;
-  
 }
 
 .homeRight > img {
-  max-width:100%;
+  max-width: 100%;
 }

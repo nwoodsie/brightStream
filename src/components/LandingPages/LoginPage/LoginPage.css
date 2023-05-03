@@ -1,84 +1,83 @@
 .loginWrapper {
-    display: flex;
-    background-color: var(--sub-blue);
-    width: 100%;
-    height: 100%;
-    justify-content: center;
+  display: flex;
+  background-color: var(--sub-blue);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 
 .loginContainer {
-    background: #FFFFFF;
-    
-    flex-direction: column;
-    display: flex;
-    position: flex;
-    justify-content: center;
-    align-items: center;
-    
-    border-radius: 30px;
-    
-    width: 510px;
-    height: 426px;
-    left: 463px;
-    top: 198px;
+  background: #ffffff;
 
-    margin-top: 125px;
+  flex-direction: column;
+  display: flex;
+  position: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 30px;
+
+  width: 510px;
+  height: 426px;
+  left: 463px;
+  top: 198px;
+
+  margin-top: 125px;
 }
 
 .loginTitle {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
 
-    margin-top: 26px;
+  margin-top: 26px;
 
-    color: #000000;
+  color: #000000;
 }
 
 .loginForm {
-    justify-content: center;
-    
+  justify-content: center;
 }
 
 .loginLabel {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
 
-    /* identical to box height */
-    letter-spacing: 0.01em;
+  /* identical to box height */
+  letter-spacing: 0.01em;
 
-    color: #000000;
+  color: #000000;
 }
 
 #emailLabel {
-    margin-right: 406px;
-    margin-left: 66px;
+  margin-right: 406px;
+  margin-left: 66px;
 }
 
 #passwordLabel {
-    margin-right: 375px;
-    margin-left: 66px;
+  margin-right: 375px;
+  margin-left: 66px;
 }
 
 .loginInput {
-    width: 344px;
-    height: 45px;
-    left: 529px;
-    top: 323px;
-    background: rgba(217, 217, 217, 0.6);
-    border-radius: 4px;
+  width: 344px;
+  height: 45px;
+  left: 529px;
+  top: 323px;
+  background: rgba(217, 217, 217, 0.6);
+  border-radius: 4px;
 
-    margin-right: 100px;
-    margin-left: 66px;
-    
+  margin-right: 100px;
+  margin-left: 66px;
 }
 
-.buttonContainer {
-    margin-top: 10px;
+.loginButtonContainer {
+  margin: 1rem;
+  margin-left: 3rem;
 }
