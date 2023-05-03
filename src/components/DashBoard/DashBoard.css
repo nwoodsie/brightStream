@@ -3,6 +3,7 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
+  background-color: var(--sub-blue);
 }
 
 .dashBoardContainer {
@@ -13,9 +14,9 @@
 }
 
 .dashBoardMain {
+  margin-left: 6rem;
   height: 100%;
   width: 100%;
-  background-color: var(--sub-blue);
 
   display: flex;
   flex-direction: column;
@@ -36,15 +37,19 @@
 }
 
 .dashBoardChatContainer {
+  display: flex;
   width: 7.5rem;
   max-width: 7.5rem;
   min-width: 7.5rem;
+  background-color: white;
+  box-shadow: 2px 0 8px -6px #222;
+  align-items: baseline;
 }
 
 .dashBoardChatTitle {
-  margin: 1rem;
+  margin: 0.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 35px;
   line-height: 61px;
 }
