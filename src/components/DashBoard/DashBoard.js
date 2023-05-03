@@ -1,13 +1,13 @@
 import React from "react";
 import "./DashBoard.css";
-import MinSideBar from "./MinSideBar.js";
+import SideBarNew from "./SideBarNew.js";
 
 
 function DashBoard() {
   return (
     <div className="dashBoardWrapper">
       <div className="dashBoardContainer">
-        <MinSideBar />
+        <SideBarNew />
         <div className="dashBoardMain">
           <div className="dashBoardTitle">DashBoard</div>
         </div>

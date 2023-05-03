@@ -26,8 +26,12 @@
     margin-top: 0.2rem;
     margin-bottom: 1rem;
   }
-  
-  #collapseIcon {
+  .sidebar-toggle{
+    display: flex;
+    background-color: transparent;
+    border-color: transparent;
+  }
+  #extcollapseIcon {
     color: var(--main-blue);
     font-size: 30px;
     align-items: right;
@@ -48,9 +52,8 @@
     height: 1rem;
     padding: 0px;
     border-radius: 0px;
-    align-content: center;
+    align-content: flex-start;
     align-items: center;
-    
     margin-bottom: 0rem;
     margin-left:0rem;
   }
