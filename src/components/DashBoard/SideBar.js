@@ -35,10 +35,10 @@ function SideBar() {
           <p>Home</p>
         </div>
       </Link>
-      <Link to="/HostStream" style={{ textDecoration: "none" }}>
+      <Link to="/ViewStream" style={{ textDecoration: "none" }}>
         <div className="sideBarIconWrapper">
           <Videocam />
-          <p>Classroom</p>
+          <p>View Stream</p>
         </div>
       </Link>
       <Link to="/BrowseStreams" style={{ textDecoration: "none" }}>

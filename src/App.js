@@ -9,7 +9,7 @@ import {
   DashBoard,
   GSPage,
   LoginPage,
-  ClassRoom,
+  StreamViewer,
   DolbyPage,
   SchedulePage,
   PrivacyPage,
@@ -31,7 +31,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<DashBoard />} />
             <Route exact path="/BrowseStreams" element={<BrowseStreams />} />
-            <Route exact path="/HostStream" element={<ClassRoom />} />
+            <Route exact path="/ViewStream" element={<StreamViewer />} />
           </Routes>
         </Router>
       ) : (
