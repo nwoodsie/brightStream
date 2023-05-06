@@ -10,5 +10,6 @@ export { default as DolbyPage } from "./LandingPages/DolbyPage/DolbyPage.js";
 export { default as DashBoard } from "./DashBoard/DashBoard.js";
 export { default as StreamViewer } from "./DashBoard/StreamViewer.js";
 export { default as BrowseStreams } from "./DashBoard/BrowseStreams.js";
+export { default as SettingsPage } from "./DashBoard/SettingsPage.js";
 
 export { default as DefaultButton } from "./Reusable/DefaultButton.js";
