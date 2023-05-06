@@ -53,7 +53,7 @@ function SideBar() {
           <p>Schedule</p>
         </div>
       </Link>
-      <Link to="/" style={{ textDecoration: "none" }}>
+      <Link to="/Settings" style={{ textDecoration: "none" }}>
         <div className="sideBarIconWrapper">
           <Settings />
           <p>Settings</p>
@@ -63,9 +63,11 @@ function SideBar() {
         <Logout />
         <p>Log Out</p>
       </div>
-      <div className="profileWrapper">
-        <img src={require("./profilePicture.jpg")} alt="" />
-      </div>
+      <Link to="/Settings" style={{ textDecoration: "none" }}>
+        <div className="profileWrapper">
+          <img src={require("./profilePicture.jpg")} alt="" />
+        </div>
+      </Link>
     </div>
   );
 }

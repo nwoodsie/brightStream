@@ -1,0 +1,65 @@
+.personalContainer {
+  width: calc(100% - 2rem);
+  height: 35%;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgba(232, 232, 232, 0.6);
+}
+
+.streamingContainer {
+  width: calc(100% - 2rem);
+  height: 65%;
+  margin: 1rem;
+  margin-top: 0rem;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgba(232, 232, 232, 0.6);
+}
+
+.personalInformationSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.personalInformationTitle {
+  margin: 0.7rem;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+}
+
+.personalInformationBottomLeft {
+  margin: 0.8rem;
+  flex: 2;
+  display: flex;
+  justify-content: first baseline;
+}
+
+.personalInformationBottomLeft > img {
+  max-width: 200px;
+}
+
+.personalInformationBottomRight {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.personalInformationText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  margin-top: 1.1rem;
+}

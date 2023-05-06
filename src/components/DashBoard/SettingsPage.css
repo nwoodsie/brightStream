@@ -1,0 +1,70 @@
+.settingsContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.settingsContainer {
+  width: calc(100% - 3rem);
+  height: 100%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: white;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+
+.settingsLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 3px solid rgba(232, 232, 232, 0.6);
+  padding-top: 0.8rem;
+}
+
+.settingsLink {
+  display: flex;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  height: 1rem;
+  width: 80%;
+  margin-top: 0.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.settingsLinkSelected {
+  display: flex;
+  border-radius: 30px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  height: 1rem;
+  width: 80%;
+  margin-top: 0.4rem;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(59, 111, 244, 0.28);
+  color: #3b6ff4;
+}
+
+.settingsLink:hover {
+  background-color: rgba(59, 111, 244, 0.15);
+  color: #3b6ff4;
+}
+
+.settingsRight {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

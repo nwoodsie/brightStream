@@ -14,6 +14,7 @@ import {
   SchedulePage,
   PrivacyPage,
   BrowseStreams,
+  SettingsPage,
 } from "./components/index.js";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -32,6 +33,7 @@ function App() {
             <Route exact path="/" element={<DashBoard />} />
             <Route exact path="/BrowseStreams" element={<BrowseStreams />} />
             <Route exact path="/ViewStream" element={<StreamViewer />} />
+            <Route exact path="/Settings" element={<SettingsPage />} />
           </Routes>
         </Router>
       ) : (
