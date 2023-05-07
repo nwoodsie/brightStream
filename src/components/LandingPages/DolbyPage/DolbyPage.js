@@ -14,7 +14,7 @@ function DolbyPage() {
             Powered by <br /> Dolby.io
           </div>
           <div className="dolbyText">{Dolbytext}</div>
-          <div className="buttonContainer">
+          <div className="dolbybuttonContainer">
             <DefaultButton text="Get started" size="Big" />
           </div>
         </div>

@@ -13,7 +13,8 @@
 }
 
 .classLeft {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
   width: 60%;
   background-color: var(--sub-black);
 }
@@ -24,8 +25,8 @@
 .classRight {
   display: flex;
   flex-direction: column;
-  margin-top: 2.5rem;
-  margin-left: 4.5rem;
+  margin-top: 1rem;
+  margin-left: 4rem;
   width: 65%;
 }
 .classTitle {
@@ -50,4 +51,7 @@
   line-height: 18px;
   max-width: 540px;
   letter-spacing: 1.5px;
+}
+.classButtonContainer {
+  margin-left: 1rem;
 }

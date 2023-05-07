@@ -16,7 +16,8 @@
 .dolbyLeft {
   display: flex;
   flex-direction: column;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
   width: 50%;
   background-color: var(--sub--black);
 }
@@ -45,13 +46,13 @@
   letter-spacing: 1.5px;
 }
 
-.buttonContainer {
-  margin-top: 20rem;
+.dolbybuttonContainer {
+  margin-top: 0rem;
   margin-left: 1rem;
 }
 
 .dolbyRight {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   width: 65%;
 }
 
