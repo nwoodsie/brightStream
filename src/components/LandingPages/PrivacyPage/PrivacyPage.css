@@ -13,7 +13,7 @@
 }
 
 .privacyLeft {
-  margin-top: 2.5rem;
+  margin-top: 0.25rem;
   width: 60%;
   background-color: var(--sub-black);
 }
@@ -24,7 +24,7 @@
 .privacyRight {
   display: flex;
   flex-direction: column;
-  margin-top: 2.5rem;
+  margin-top: 0.25rem;
   margin-left: 4.5rem;
   width: 65%;
 }

@@ -16,7 +16,7 @@
 .dolbyLeft {
   display: flex;
   flex-direction: column;
-  margin-top: 1.5rem;
+  margin-top: 0.25rem;
   margin-left: 0.5rem;
   width: 50%;
   background-color: var(--sub--black);
@@ -52,7 +52,7 @@
 }
 
 .dolbyRight {
-  margin-top: 1rem;
+  margin-top: 0.25rem;
   width: 65%;
 }
 

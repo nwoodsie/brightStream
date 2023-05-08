@@ -17,8 +17,8 @@
   .scheduleLeft {
     display: flex;
     flex-direction: column;
-    margin-top: 1.5rem;
-    margin-left:0.5rem;
+    margin-top: 0.25rem;
+    margin-left:0.75rem;
     width: 50%;
     background-color: var(--sub--black);
   }
@@ -53,7 +53,7 @@
   }
   
   .scheduleRight {
-    margin-top: 2.5rem;
+    margin-top: 0.25rem;
     width: 65%;
     
   }
