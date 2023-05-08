@@ -17,7 +17,8 @@
   .scheduleLeft {
     display: flex;
     flex-direction: column;
-    margin-top: 2.5rem;
+    margin-top: 0.25rem;
+    margin-left:0.75rem;
     width: 50%;
     background-color: var(--sub--black);
   }
@@ -47,12 +48,12 @@
   }
   
   .buttonContainer {
-    margin-top: 20rem;
+    margin-top: 0rem;
     margin-left: 1rem;
   }
   
   .scheduleRight {
-    margin-top: 2.5rem;
+    margin-top: 0.25rem;
     width: 65%;
     
   }

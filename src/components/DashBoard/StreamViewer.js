@@ -2,6 +2,7 @@ import React from "react";
 import "./DashBoard.css";
 import SideBar from "./SideBar.js";
 
+import SocketChatExp from './SocketChat.js'
 function StreamViewer() {
   return (
     <div className="dashBoardWrapper">
@@ -22,8 +23,9 @@ function StreamViewer() {
           </div>
         </div>
         <div className="dashBoardChatContainer">
-          <div className="dashBoardChatTitle">Chat</div>
-          <div className="dashBoardChatBox"></div>
+          <div className="dashBoardChatBox">
+            <SocketChatExp />
+          </div>
         </div>
       </div>
     </div>

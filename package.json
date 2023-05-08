@@ -28,6 +28,7 @@
     "framer-motion": "^7",
     "git": "^0.1.5",
     "js-yaml": "^4.1.0",
+    "nodemon": "^2.0.22",
     "pixelmatch": "^5.3.0",
     "playwright": "^1.31.0",
     "react": "^18.2.0",
@@ -38,9 +39,13 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.10.0",
     "react-scripts": "^5.0.1",
+    "react-scroll-to-bottom": "^4.2.0",
     "react-usestateref": "^1.0.8",
     "regenerator-runtime": "^0.13.7",
-    "source-map-support": "^0.5.21"
+    "socket.io-client": "^4.6.1",
+    "source-map-support": "^0.5.21",
+    "stream-chat": "^8.6.0",
+    "stream-chat-react": "^10.8.0"
   },
   "scripts": {
     "start": "react-scripts start",

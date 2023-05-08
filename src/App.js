@@ -38,7 +38,7 @@ function App() {
         </Router>
       ) : (
         <Router>
-          <NavBar />
+          <NavBar/>
           <Routes>
             <Route exact path="/" element={<HomePage />} />
             <Route exact path="/Class" element={<ClassPage />} />
