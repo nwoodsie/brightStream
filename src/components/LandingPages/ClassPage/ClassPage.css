@@ -13,7 +13,7 @@
 }
 
 .classLeft {
-  margin-top: 0.25rem;
+  margin-top: 2.5rem;
   margin-left: 0.5rem;
   width: 60%;
   background-color: var(--sub-black);
@@ -25,7 +25,7 @@
 .classRight {
   display: flex;
   flex-direction: column;
-  margin-top: 0.25rem;
+  margin-top: 2.5rem;
   margin-left: 3.5rem;
   width: 65%;
 }

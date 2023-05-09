@@ -12,7 +12,7 @@
     justify-content: center;
   }
 .collaborateCenter {
-    margin-top: -0.25rem;
+    margin-top: 1rem;
     width: 60%;
     background-color: var(--sub-black);
   }
@@ -26,11 +26,11 @@
     line-height: 55px;
   }
   .collaborateCenter > img {
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
     max-width:120%;
   }
   .collaborateText {
-    margin: 0rem 0rem 0rem 0rem;
+    margin: 0.5rem 0rem 0rem 0rem;
     color: var(--black);
     font-family: "Montserrat", sans-serif;
     font-style: normal;

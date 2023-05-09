@@ -18,7 +18,7 @@ function SocketChatExp() {
   };
 
   return (
-    <div className="App">
+    <div className="chatApp">
       {!showChat ? (
         <div className="joinChatContainer">
           <h3>Join A Chat</h3>

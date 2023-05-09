@@ -1,4 +1,4 @@
-.App {
+.chatApp {
     width: 100vw;
     height: 100vh;
     background: var(--sub-blue) ;
@@ -7,7 +7,7 @@
     display: grid;
     place-items: center;
   }
-  body {
+  .chatbody {
     margin: 0%;
     padding: 0%;
   }
