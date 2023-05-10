@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./BrowseStreams.css";
 import SideBar from "./SideBar.js";
 import { allStreams } from "./helpers.js";
 import { useDispatch } from "react-redux";
 import { setCurrentStream } from "../../features/userSlice";
 import { useNavigate } from "react-router-dom";
-import { getDocs, collection } from "firebase/firestore";
+
+import { db } from "../firebase.js";
+import { collection, getDocs } from "firebase/firestore";
+
 import { Oval } from "react-loader-spinner";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 
@@ -14,21 +17,61 @@ function BrowseStreams() {
   const navigate = useNavigate();
   const redirect = () => navigate("/ViewStream", { replace: true });
   const [isLoading, setIsLoading] = useState({
-    userId: "",
+    streamId: "",
     isLoading: true,
   });
 
-  const handleStreamClick = async (e) => {
-    e.preventDefault();
+  const findAll = async () => {
+    const doc_refs = await getDocs(collection(db, "users"));
+    const res = [];
+
+    doc_refs.forEach((user) => {
+      res.push({
+        id: user.id,
+        ...user.data(),
+      });
+    });
+
+    return res;
+  };
+
+  const [streamData, setStreamData] = useState([]);
+
+  const fetchData = async () => {
+    const res = await findAll();
+    console.log({ response: res });
+    const streamData = [];
+    res.map((user) => {
+      if (user.dolby_creds.isLive) streamData.push(user.dolby_creds);
+    });
+    setStreamData(streamData);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  console.log({ streamData });
+
+  const handleStreamClick = async (
+    streamId,
+    streamName,
+    streamDisplayName,
+    streamTitle,
+    streamTopic
+  ) => {
     try {
       dispatch(
         setCurrentStream({
-          userId: "cpCF9L",
-          streamName: "myStreamName",
+          streamId: streamId,
+          streamName: streamName,
+          streamDisplayName: streamDisplayName,
+          streamTitle: streamTitle,
+          streamTopic: streamTopic,
         })
       );
       await new Promise((resolve) => {
-        setIsLoading({ userId: "cpCF9L", isLoading: true });
+        setIsLoading({ userId: streamId, isLoading: true });
         setTimeout(resolve, 1000);
       });
       redirect();
@@ -44,13 +87,22 @@ function BrowseStreams() {
         <div className="dashBoardMain">
           <div className="dashBoardTitle">Browse Streams</div>
           <div className="allStreamsGrid">
-            {allStreams.map((stream) => (
+            {streamData.map((stream) => (
               <div
                 className="cardWrapper"
-                onClick={(e) => handleStreamClick(e)}
+                value={stream.streamId}
+                onClick={() =>
+                  handleStreamClick(
+                    stream.streamId,
+                    stream.streamName,
+                    stream.streamDisplayName,
+                    stream.streamTitle,
+                    stream.streamTopic
+                  )
+                }
               >
                 <div className="streamCard">
-                  {isLoading.userId === stream.userId ? (
+                  {isLoading.userId === stream.streamId ? (
                     <Oval
                       height={80}
                       width={80}
@@ -68,9 +120,15 @@ function BrowseStreams() {
                   )}
                 </div>
                 <div className="streamTextContainer">
-                  <div className="streamTitle">{stream.name}</div>
-                  <div className="streamSubTitle">Topic: {stream.topic}</div>
-                  <div className="streamSubTitle">{stream.author}</div>
+                  <div className="streamTitle">
+                    {stream.streamTitle ?? "Untitled Stream"}
+                  </div>
+                  <div className="streamSubTitle">
+                    Topic: {stream.streamTopic ?? "No Topic"}
+                  </div>
+                  <div className="streamSubTitleStreamer">
+                    {stream.displayName ?? "Untitled Streamer"}
+                  </div>
                 </div>
               </div>
             ))}
