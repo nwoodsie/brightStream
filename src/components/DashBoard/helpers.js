@@ -3,6 +3,7 @@ export const allStreams = [
     name: "Circular Motion 2A",
     topic: "Physics",
     author: "J. Kennedy",
+    userId: "cpCF9L",
   },
   {
     name: "Titration and Diffusion",

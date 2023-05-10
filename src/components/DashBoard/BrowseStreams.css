@@ -14,12 +14,16 @@
 }
 
 .streamCard {
-  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
   border-radius: 22px;
   border: 2px dotted var(--main-blue);
-  color: white;
+  color: var(--main-blue);
   width: 100%;
   height: 80%;
+  cursor: pointer;
 }
 
 .streamTextContainer {
