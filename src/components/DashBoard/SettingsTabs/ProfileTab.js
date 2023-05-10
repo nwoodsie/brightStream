@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ProfileTab.css";
 import SettingsButton from "./SettingsButton.js";
-import { FormControlLabel, Switch } from "@mui/material";
+import { Box, FormControlLabel, Switch } from "@mui/material";
 
 function ProfileTab() {
   const handleSaveStreamDetails = () => {
@@ -84,11 +84,16 @@ function ProfileTab() {
                 placeholder={"Stream Name"}
                 // onChange={(e) => setPassword(e.target.value)}
               />
+              <div className="smallBreak" />
               <FormControlLabel
-                control={<Switch defaultChecked />}
+                control={<Switch />}
                 checked={checked}
                 onChange={() => setChecked(!checked)}
-                label="On Air: "
+                label={
+                  <Box component="div" fontSize={20}>
+                    On Air:
+                  </Box>
+                }
                 labelPlacement="start"
               />
             </div>
