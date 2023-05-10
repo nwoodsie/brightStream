@@ -45,6 +45,8 @@
 
 .personalInformationBottomLeft > img {
   max-width: 200px;
+  object-fit: cover;
+  width: 150px;
 }
 
 .personalInformationBottomRight {
@@ -54,6 +56,7 @@
   align-items: flex-start;
   width: 100%;
   height: 100%;
+  justify-content: left;
 }
 
 .personalInformationText {
@@ -62,4 +65,45 @@
   line-height: 18px;
   letter-spacing: 0.01em;
   margin-top: 1.1rem;
+  text-align: left;
+}
+
+.streamingInfoBlock {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.formWrapper {
+  display: flex;
+
+  height: 300px;
+  padding: 40px;
+  width: 800px;
+}
+
+.inputBox {
+  width: 344px;
+  height: 45px;
+
+  background: rgba(217, 217, 217, 0.6);
+  border-radius: 4px;
+}
+
+.inputLabel {
+  margin-top: 15px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* identical to box height */
+  letter-spacing: 0.01em;
+
+  color: #000000;
 }
