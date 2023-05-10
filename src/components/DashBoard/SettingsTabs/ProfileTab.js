@@ -34,18 +34,25 @@ function ProfileTab() {
               <input
                 className="inputBox"
                 type="text"
-                id="email"
                 required
-                value={"email"}
+                placeholder={"Dolby Stream ID"}
+
                 // onChange={(e) => setEmail(e.target.value)}
               />
               <label className="inputLabel">Dolby Stream Name:</label>
               <input
                 className="inputBox"
-                type="password"
-                id="password"
+                type="text"
                 required
-                value={"password"}
+                placeholder={"Dolby Steam Name"}
+                // onChange={(e) => setPassword(e.target.value)}
+              />
+              <label className="inputLabel">Stream Topic:</label>
+              <input
+                className="inputBox"
+                type="text"
+                required
+                placeholder={"Topic..."}
                 // onChange={(e) => setPassword(e.target.value)}
               />
             </div>
@@ -55,16 +62,15 @@ function ProfileTab() {
                 className="inputBox"
                 type="text"
                 required
-                value={"email"}
+                placeholder={"Display Name"}
                 // onChange={(e) => setEmail(e.target.value)}
               />
               <label className="inputLabel">Stream Name:</label>
               <input
                 className="inputBox"
-                type="password"
-                id="password"
+                type="text"
                 required
-                value={"password"}
+                placeholder={"Stream Name"}
                 // onChange={(e) => setPassword(e.target.value)}
               />
             </div>
