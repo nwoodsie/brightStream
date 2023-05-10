@@ -7,7 +7,7 @@ function StreamViewer() {
   const streamId = useSelector((state) => state.user.streamId);
   const streamName = useSelector((state) => state.user.streamName);
   const streamUrl = `https://viewer.millicast.com/?streamId=${streamId}/${streamName}`;
-  console.log({ streamId, streamName });
+
   return (
     <div className="dashBoardWrapper">
       <div className="dashBoardContainer">
