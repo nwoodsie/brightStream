@@ -7,6 +7,8 @@ export const userSlice = createSlice({
   initialState: {
     user: null,
     selected: null,
+    streamId: null,
+    streamName: null,
   },
   reducers: {
     login: (state, action) => {
@@ -18,10 +20,15 @@ export const userSlice = createSlice({
     selectPage: (state, action) => {
       state.selected = action.payload;
     },
+    setCurrentStream: (state, action) => {
+      state.streamId = action.payload.userId;
+      state.streamName = action.payload.streamName;
+    },
   },
 });
 
-export const { login, logout, selectPage } = userSlice.actions;
+export const { login, logout, selectPage, setCurrentStream } =
+  userSlice.actions;
 export const selectUser = (state) => state.user.user;
 export const selectedPage = (state) => state.user.selected;
 export default userSlice.reducer;
