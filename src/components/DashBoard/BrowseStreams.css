@@ -45,5 +45,13 @@
 .streamSubTitle {
   font-size: 12px;
   color: var(--font-grey);
+  font-weight: 400;
+  line-height: normal;
+}
+
+.streamSubTitleStreamer {
+  font-size: 12px;
+
+  color: var(--font-grey);
   line-height: normal;
 }
