@@ -33,6 +33,10 @@ const navData = [
     link: "/Privacy",
     text: "Privacy",
   },
+  {
+    link: "/Quiz",
+    text: "Quiz",
+  },
 ];
 
 function NavBar() {

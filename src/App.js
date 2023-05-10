@@ -15,6 +15,7 @@ import {
   PrivacyPage,
   BrowseStreams,
   SettingsPage,
+  QuizPage,
 } from "./components/index.js";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -48,6 +49,7 @@ function App() {
             <Route exact path="/Privacy" element={<PrivacyPage />} />
             <Route exact path="/Schedule" element={<SchedulePage />} />
             <Route exact path="/Dolby" element={<DolbyPage />} />
+            <Route exact path="/Quiz" element={<QuizPage />} />
           </Routes>
         </Router>
       )}
