@@ -14,13 +14,17 @@ import {
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { logout } from "../../features/userSlice.js";
+import { useNavigate } from "react-router-dom";
 
 function SideBar() {
   //const user = userSelector(selectUser);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const redirect = () => navigate("/", {replace:true});
   const handleLogout = (e) => {
     e.preventDefault();
     dispatch(logout());
+    redirect();
   };
 
   return (

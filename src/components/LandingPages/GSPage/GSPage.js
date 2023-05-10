@@ -36,9 +36,12 @@ function GSPage() {
           email: email,
           password: password,
           dolby_creds: {
+            displayName: "",
+            isLive: false,
+            streamId: "",
             streamName: "",
-            streamToken: "",
-            dolby_id: "",
+            streamTitle: "",
+            streamTopic: ""
           },
         };
         setDoc(doc(db, "users", user.uid), userData);
