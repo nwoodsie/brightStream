@@ -3,6 +3,10 @@ import "./ProfileTab.css";
 import SettingsButton from "./SettingsButton.js";
 
 function ProfileTab() {
+  const handleSaveStreamDetails = () => {
+    alert("Stream Details Saved!");
+  };
+
   return (
     <>
       <div className="personalContainer">
@@ -25,7 +29,12 @@ function ProfileTab() {
       <div className="streamingContainer">
         <div className="personalInformationSection">
           <div className="personalInformationTitle">Streaming Set-Up</div>
-          <SettingsButton text="Add" />
+          <div className="saveButtonWrapper">
+            <SettingsButton
+              text="Save"
+              onClick={() => handleSaveStreamDetails()}
+            />
+          </div>
         </div>
         <form>
           <div className="formWrapper">
