@@ -39,7 +39,7 @@ function BrowseStreams() {
 
   const fetchData = async () => {
     const res = await findAll();
-    console.log({ response: res });
+
     const streamData = [];
     res.map((user) => {
       if (user.dolby_creds.isLive) streamData.push(user.dolby_creds);
@@ -50,8 +50,6 @@ function BrowseStreams() {
   useEffect(() => {
     fetchData();
   }, []);
-
-  console.log({ streamData });
 
   const handleStreamClick = async (
     streamId,

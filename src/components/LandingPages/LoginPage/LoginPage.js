@@ -21,10 +21,9 @@ function LoginPage() {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-        console.log(user);
         dispatch(
           login({
-            name: user.email,
+            user: user.uid,
             isLoggedIn: true,
           })
         );
