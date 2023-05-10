@@ -6,6 +6,17 @@ export const userSlice = createSlice({
   //initial state of the information that we want to track
   initialState: {
     user: null,
+    user_id: "",
+    /*
+    streamName: "",
+    name: "",
+    email: "",
+    isLive: false,
+    streamId: "",
+    streamTitle: "",
+    streamTopic: "",
+    */
+    isLoggedIn: false,
     selected: null,
   },
   reducers: {

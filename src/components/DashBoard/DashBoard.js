@@ -3,7 +3,7 @@ import "./DashBoard.css";
 import SideBar from "./SideBar.js";
 
 function DashBoard() {
-  const name = "Name"; // Get this name from firestore
+  const name = "name"; // Get this name from firestore
 
   return (
     <div className="dashBoardWrapper">

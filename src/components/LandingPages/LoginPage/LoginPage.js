@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./LoginPage.css";
-import { auth } from "../../firebase.js";
+import { auth, db} from "../../firebase.js";
 import { DefaultButton } from "../../index.js";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { login } from "../../../features/userSlice";
+import { doc, getDoc } from "firebase/firestore";
 
 function LoginPage() {
   const [email, setEmail] = useState("");
@@ -15,17 +16,21 @@ function LoginPage() {
   const redirect = () => navigate("/", { replace: true });
 
   const dispatch = useDispatch();
-
-  const onLogin = (e) => {
+  const onLogin = async (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-        console.log(user);
+        //grab user data from firestore based on user id
+        const document = await getDoc(doc(db, "users", user.uid));
+        console.log(document);
         dispatch(
           login({
-            name: user.email,
+            //change user from user payload to user to true (avoid errors)
+            user: true,
+            user_id: user.uid,
             isLoggedIn: true,
+            selected: null,
           })
         );
         redirect();
