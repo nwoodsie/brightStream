@@ -76,11 +76,7 @@
   justify-content: flex-start;
   width: 100%;
   height: 100%;
-}
-
-.streamingInfoBlock {
-  color: blue;
-  font-size: 10px;
+  font-size: small;
 }
 
 .saveButtonWrapper {

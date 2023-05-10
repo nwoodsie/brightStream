@@ -49,6 +49,7 @@ function GSPage() {
             isLoggedIn: true,
           })
         );
+        alert("Account Created!");
         redirect();
       })
       .catch((error) => {

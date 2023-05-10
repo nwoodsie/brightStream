@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ProfileTab.css";
 import SettingsButton from "./SettingsButton.js";
+import { FormControlLabel, Switch } from "@mui/material";
 
 function ProfileTab() {
   const handleSaveStreamDetails = () => {
     alert("Stream Details Saved!");
   };
 
+  const [checked, setChecked] = useState(false);
   return (
     <>
       <div className="personalContainer">
@@ -81,6 +83,13 @@ function ProfileTab() {
                 required
                 placeholder={"Stream Name"}
                 // onChange={(e) => setPassword(e.target.value)}
+              />
+              <FormControlLabel
+                control={<Switch defaultChecked />}
+                checked={checked}
+                onChange={() => setChecked(!checked)}
+                label="On Air: "
+                labelPlacement="start"
               />
             </div>
           </div>
