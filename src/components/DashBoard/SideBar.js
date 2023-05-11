@@ -11,16 +11,19 @@ import {
   CalendarMonth,
 } from "@mui/icons-material";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { logout } from "../../features/userSlice.js";
 
 function SideBar() {
+  const navigate = useNavigate();
+  const redirect = () => navigate("/", { replace: true });
   //const user = userSelector(selectUser);
   const dispatch = useDispatch();
   const handleLogout = (e) => {
     e.preventDefault();
     dispatch(logout());
+    redirect();
   };
 
   return (
