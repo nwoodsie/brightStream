@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./BrowseStreams.css";
 import SideBar from "./SideBar.js";
-import { allStreams } from "./helpers.js";
 import { useDispatch } from "react-redux";
 import { setCurrentStream } from "../../features/userSlice";
 import { useNavigate } from "react-router-dom";
@@ -41,15 +40,13 @@ function BrowseStreams() {
     const res = await findAll();
 
     const streamData = [];
-    res.map((user) => {
-      if (user.dolby_creds.isLive) streamData.push(user.dolby_creds);
-    });
+    res
+      .filter((user) => user.dolby_creds.isLive)
+      .map((user) => streamData.push(user.dolby_creds));
     setStreamData(streamData);
   };
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  fetchData();
 
   const handleStreamClick = async (
     streamId,

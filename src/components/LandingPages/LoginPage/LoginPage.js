@@ -30,9 +30,9 @@ function LoginPage() {
         redirect();
       })
       .catch((error) => {
-        // const errorCode = error.code;
-        // const errorMessage = error.message;
-        // console.log(errorCode, errorMessage);
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
         alert("Invalid Username/Password");
       });
   };

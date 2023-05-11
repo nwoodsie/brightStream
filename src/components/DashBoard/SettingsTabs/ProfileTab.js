@@ -1,16 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./ProfileTab.css";
 import SettingsButton from "./SettingsButton.js";
 import { Box, FormControlLabel, Switch } from "@mui/material";
 import { db } from "../../firebase.js";
-import {
-  collection,
-  doc,
-  getDoc,
-  getDocs,
-  setDoc,
-  where,
-} from "firebase/firestore";
+import { doc, getDoc, setDoc } from "firebase/firestore";
 import { selectUser } from "../../../features/userSlice.js";
 import { useSelector } from "react-redux";
 
@@ -39,9 +32,7 @@ function ProfileTab() {
     }
   }
 
-  useEffect(() => {
-    getUserData();
-  }, []);
+  getUserData();
 
   const [streamId, setStreamId] = useState("");
   const [streamName, setStreamName] = useState("");
@@ -73,6 +64,7 @@ function ProfileTab() {
       streamingData.dolby_creds.streamTopic
     ) {
       await setUserdata();
+
       alert("Stream Details Saved!");
     } else {
       alert("Please Fill out every field");
@@ -80,6 +72,9 @@ function ProfileTab() {
   };
   const handleGoOffline = async () => {
     await setDoc(docRef, { dolby_creds: { isLive: false } }, { merge: true });
+    await new Promise((resolve) => {
+      setTimeout(resolve, 200);
+    });
     alert(
       "Your stream is offline and has been removed from the Browse streams page!"
     );
@@ -87,6 +82,9 @@ function ProfileTab() {
 
   const handleGoOnline = async () => {
     await setDoc(docRef, { dolby_creds: { isLive: true } }, { merge: true });
+    await new Promise((resolve) => {
+      setTimeout(resolve, 200);
+    });
     alert(
       "Your stream is online and has been added to the Browse streams page!"
     );
@@ -120,7 +118,10 @@ function ProfileTab() {
         <div className="personalInformationSection">
           <div className="personalInformationTitle">Streaming Set-Up</div>
           <div className="saveButtonWrapper">
-            <SettingsButton text="GoOffline" onClick={() => handleGoOnline()} />
+            <SettingsButton
+              text="GoOffline"
+              onClick={() => handleGoOffline()}
+            />
             <SettingsButton text="GoOnline" onClick={() => handleGoOnline()} />
             <SettingsButton
               text="Save"
