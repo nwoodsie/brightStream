@@ -68,7 +68,7 @@ function ProfileTab() {
               />
             </div>
             <div className="streamingInfoBlock">
-              <label className="inputLabel">Display Name:</label>
+              <label className="inputLabel">Bright Stream Display Name:</label>
               <input
                 className="inputBox"
                 type="text"
@@ -76,7 +76,7 @@ function ProfileTab() {
                 placeholder={"Display Name"}
                 // onChange={(e) => setEmail(e.target.value)}
               />
-              <label className="inputLabel">Stream Name:</label>
+              <label className="inputLabel">BrightStream Stream Title:</label>
               <input
                 className="inputBox"
                 type="text"
