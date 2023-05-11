@@ -158,6 +158,9 @@ function ProfileTab() {
               />
             </div>
             <div className="streamingInfoBlock">
+
+              <label className="inputLabel">Bright Stream Display Name:</label>
+
               <label className="inputLabel">
                 Display Name:
                 {userFireStoreData.dolby_creds?.streamDisplayName}
@@ -170,6 +173,7 @@ function ProfileTab() {
                 value={streamDisplayName}
                 onChange={(e) => setStreamDisplayName(e.target.value)}
               />
+
               <label className="inputLabel">
                 Stream Title:
                 {userFireStoreData.dolby_creds?.streamTitle}
