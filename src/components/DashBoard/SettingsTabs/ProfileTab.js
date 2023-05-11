@@ -98,10 +98,10 @@ function ProfileTab() {
           </div>
           <div className="personalInformationBottomRight">
             <div className="personalInformationText">
-              Name: {userFireStoreData.name ?? "Email"}
+              Name: {userFireStoreData.name}
             </div>
             <div className="personalInformationText">
-              Email: {userFireStoreData.email ?? "Email"}
+              Email: {userFireStoreData.email}
             </div>
             <div className="personalInformationText">
               On Air: {userFireStoreData.dolby_creds?.isLive ? "Yes" : "No"}
