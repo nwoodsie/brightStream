@@ -78,12 +78,19 @@ function ProfileTab() {
       alert("Please Fill out every field");
     }
   };
-  const handleIsLiveChange = async (isLive) =>
-    await setDoc(docRef, isLive, { merge: true });
+  const handleGoOffline = async () => {
+    await setDoc(docRef, { dolby_creds: { isLive: false } }, { merge: true });
+    alert(
+      "Your stream is offline and has been removed from the Browse streams page!"
+    );
+  };
 
-  useEffect(() => {
-    handleIsLiveChange({ dolby_creds: { isLive: isLive } });
-  }, [isLive]);
+  const handleGoOnline = async () => {
+    await setDoc(docRef, { dolby_creds: { isLive: true } }, { merge: true });
+    alert(
+      "Your stream is online and has been added to the Browse streams page!"
+    );
+  };
 
   return (
     <>
@@ -113,6 +120,8 @@ function ProfileTab() {
         <div className="personalInformationSection">
           <div className="personalInformationTitle">Streaming Set-Up</div>
           <div className="saveButtonWrapper">
+            <SettingsButton text="GoOffline" onClick={() => handleGoOnline()} />
+            <SettingsButton text="GoOnline" onClick={() => handleGoOnline()} />
             <SettingsButton
               text="Save"
               onClick={() => handleSaveStreamDetails()}
@@ -160,7 +169,7 @@ function ProfileTab() {
             <div className="streamingInfoBlock">
               <label className="inputLabel">
                 Display Name:
-                {userFireStoreData.dolby_creds?.streamDisplayName}
+                {userFireStoreData.dolby_creds?.displayName}
               </label>
               <input
                 className="inputBox"

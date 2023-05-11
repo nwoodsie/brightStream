@@ -93,7 +93,7 @@ function BrowseStreams() {
                   handleStreamClick(
                     stream.streamId,
                     stream.streamName,
-                    stream.streamDisplayName,
+                    stream.displayName,
                     stream.streamTitle,
                     stream.streamTopic
                   )
