@@ -27,25 +27,27 @@ function GSPage() {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-        console.log(user);
 
         //Cloud firestore database to store new registered user
-        let userData = {
+        const userData = {
           user_id: user.uid,
           name: name,
           email: email,
           password: password,
           dolby_creds: {
-            streamName: "",
-            streamToken: "",
-            dolby_id: "",
+            displayName: name,
+            isLive: false,
+            streamId: "",
+            streamName: "myStreamName",
+            streamTitle: "",
+            streamTopic: "",
           },
         };
         setDoc(doc(db, "users", user.uid), userData);
 
         dispatch(
           login({
-            user: user,
+            user: user.uid,
             isLoggedIn: true,
           })
         );
@@ -57,7 +59,7 @@ function GSPage() {
         const errorMessage = error.message;
         console.log(errorCode);
         console.log(errorMessage);
-        alert("Something went wrong!");
+        alert(errorMessage);
       });
   };
 

@@ -24,7 +24,6 @@ import { selectUser } from "./features/userSlice.js";
 
 function App() {
   const user = useSelector(selectUser);
-
   return (
     <div className="App">
       {user ? (
